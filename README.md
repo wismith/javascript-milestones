@@ -3,6 +3,7 @@
 ## Contents <!-- omit in toc -->
 
 - [Instructions](#instructions)
+  - [Restrictions](#restrictions)
   - [Examples](#examples)
 - [Tasks - Development Environment](#tasks---development-environment)
   - [Command Line](#command-line)
@@ -16,10 +17,15 @@
   - [Objects](#objects)
   - [Conversions And Equivalents](#conversions-and-equivalents)
   - [Iteration / Looping](#iteration--looping)
+    - [Looping With Numbers](#looping-with-numbers)
+    - [Looping With Arrays](#looping-with-arrays)
+      - [...Containing Numbers](#containing-numbers)
+      - [...Containing Strings](#containing-strings)
+  - [Looping With Objects](#looping-with-objects)
   - [Logical Operators](#logical-operators)
   - [Functions](#functions)
   - [File I/O](#file-io)
-- [Rename Code](#rename-code)
+- [Understanding Code Like A Computer](#understanding-code-like-a-computer)
 
 ## Instructions
 
@@ -28,6 +34,14 @@ Below is a list of tasks. By the start of next week (Monday, February 17), every
 1. Understand what the task is asking
 1. Be able to do the task
 1. Write code that makes it clear you understand what's happening
+
+### Restrictions
+
+You're free to use any built-in JavaScript function unless otherwise stated. For example, if you're asked to write a function that works like `Math.max`, don't use `Math.max`!
+
+When you find a task you're not sure how to do, search for documentation, tutorials, guides, or anything else that might help you.
+
+If you copy code from somewhere else, include the URL in a comment.
 
 ### Examples
 
@@ -209,7 +223,11 @@ In a file called `conversions.js`, you should be able to do the following:
 
 ### Iteration / Looping
 
-In a file called `looping.js`, you should be able to do the following using a loop:
+You will probably want to create more than one file to demonstrate everything below. Try to use one loop per example. Imagine your examples being used in some online tutorial; a single loop that demonstrates 20 things will be confusing.
+
+#### Looping With Numbers
+
+You should be able to do the following using a loop:
 
 - Print out every integer between `40` and `60` (including both `40` and `60`)
 - Print out every even integer between `40` and `60` (including both `40` and `60`)
@@ -219,16 +237,28 @@ In a file called `looping.js`, you should be able to do the following using a lo
 - Print the first `10` multiples of `7`
 - Print the first `k` multiples of `7`, where `k` is a variable containing a positive integer
 - Print the first `k` multiples of `n`, where `k` is a variable containing a positive integer and `n` is any number
+
+#### Looping With Arrays
+
 - Define an array called `coolArray` containing at least 4 elements of any type and...
   - Print every element of `coolArray`
   - Print every other element of `coolArray`, starting with the first element
-  - Print the elements of `coolArray` in reverse order (without using `.reverse()`)
+  - Print the elements of `coolArray` in reverse order
+
+##### ...Containing Numbers
+
 - [ ] Declare an array containing at least 8 numbers called `listOfNumbers` and...
   - [ ] Print out the largest element
   - [ ] Print out the smallest element
   - [ ] Print out all the elements greater than `0`
   - [ ] Print out all the elements greater than `k`, where `k` is a variable containing a number
   - [ ] Print out all the even elements
+- [ ] Using `sort()`...
+  - [ ] Print out elements of `coolArray` sorted from largest to smallest
+  - [ ] Print out the elements of `coolArray` sorted from smallest to largest
+
+##### ...Containing Strings
+
 - [ ] Define an array containing at least 8 strings called `listOfStrings` and...
   - [ ] Print out the longest string
   - [ ] Print out the shortest string
@@ -236,22 +266,47 @@ In a file called `looping.js`, you should be able to do the following using a lo
   - [ ] Print out all the strings longer than `minLength` characters, where `minLength` is a variable containing a number
   - [ ] Print out the first string that begins with the letter `A`
   - [ ] Print `'found it!'` if `listOfStrings` contains the string `'needle'`
-- [ ] Declare an object `coolObject` containing at least 5 key/value pairs and print out every key and value in `coolObject`
+- [ ] Using `sort()`...
+  - [ ] Print out elements of `listOfStrings` sorted alphabetically (from A to Z)
+  - [ ] Print out the elements of `listOfStrings` sorted reverse alphabetically (from Z to A)
+
+### Looping With Objects
+
+- [ ] Declare an object `coolObject` containing at least 5 key/value pairs and..
+  - [ ] Print out every key and value in `coolObject`
+  - [ ] Without changing `coolObject`, use `sort()` to...
+    - [ ] Print every key and value in `coolObject` in alphabetical order (A to Z)
+    - [ ] Print every key and value in `coolObject` in reverse alphabetical order (Z to A)
+- [ ] Iterate over the `daysInMonth` object from the [Objects](#objects) section, printing out the name of every month that has `31` days.
 
 ### Logical Operators
 
+In a file called `logic.js`, you should be able to do the following:
+
 - [ ] Declare two numbers `num1` and `num2`. Print a one message if both are even, a different message if only one is even, and a third message if neither are even.
+- [ ] Write code that makes use of the following logical operators:
+  - [ ] `||`
+  - [ ] `&&`
+  - [ ] `!`
 
 ### Functions
 
 In a file called `functions.js`, you should be able to define and call the following functions with some relevant example inputs. If they return a value but don't print anything, you should be able to print what they return.
 
-- [ ] A function `greet` that takes in a string representing someone's first name and prints out a greeting.
+- [ ] A function `greet` that takes in a string representing someone's first name and prints out a greeting. The greeting can be anything, but it should contain the given name.
+- [ ] A function called `hotOrCold` that takes a number as input and returns:
+    1. `'hot'` if the number is greater than `100`
+    1. `'correct'` if the number is exactly `100`
+    1. `'cold'` if the number is less than `100`
 - [ ] A function `add` that takes two numbers as input and returns (not prints) their sum.
-- [ ] A function `larger` that takes two numbers as input and returns the larger of the two
+  - [ ] A function `sum` that takes an array of numbers as input and returns their sum (using the `add` function you defined above)
+- [ ] A function `larger` that takes two numbers as input and returns the larger of the two (don't use the built-in `Math.max` function)
+  - [ ] A function `largest` that takes an array of numbers as input an returns the largest in the array (using the function `larger` you defined above)
 - [ ] A function `longer` that takes two strings as input and returns the longer of the two
-- [ ] A function `sum` that takes an array of numbers as input and returns their sum
-- [ ] A function `reverse` that takes an array as input and returns a new array containing the same elements as the input array, but in reverse order
+  - [ ] A function `longest` that takes an array of strings as input and returns the longest string in the array (using the `longer` function you defined above)
+- [ ] A function `reverse` that takes an array as input and returns a new array containing the same elements as the input array, but in reverse order (don't use the build-in `reverse()` function)
+- [ ] A function `isChicagoPhoneNumber` that takes an array of US phone numbers as input and returns true if the area code is 773, 312, or 872. The phone numbers are strings that look like `'XXX-YYY-ZZZZ'`.
+- [ ] A function `letterCounts` that takes a string as an input and returns an object whose keys are the letters in the string and whose values are the number of times a particular letter appears.
 
 ### File I/O
 
@@ -263,9 +318,11 @@ In a file called `files.js`, you should be able to do the following:
 - [ ] Create an array containing one entry per line
 - [ ] Print the longest and shortest lines in `data.txt`
 
-## Rename Code
+## Understanding Code Like A Computer
 
-Each of the following functions does something straightforward, but the names used in the code are terrible. Figure out what the code does and give the parts better names.
+Computers don't care what names we use to represent the work we want them to carry out. A function that adds two numbers could be called `mork`, `bananapeel`, or anything else. We only call it `add` because it helps *us*. The same goes for the code inside the function body.
+
+Below are three functions whose names have nothing to do with the work they perform. You should be able to figure out what each function does.
 
 Definitely read the code and try to make sense of it that way, but also copy the poorly-named code into an environment where you can experiment with it. Call the functions with different inputs to figure out what it's doing.
 
@@ -284,23 +341,34 @@ function papaya(meow) {
   return x;
 }
 
-console.log(papaya[10, -10, 40, 50, 108, 17]);
+console.log(papaya([10, -10, 40, 50, 108, 17]))
+```
+
+```javascript
+function clowntown(octopus) {
+  if (octopus < 0) {
+    return -1 * octopus;
+  } else {
+    return octopus;
+  }
+}
+
+console.log('clowntown(20) is:', clowntown(20));
+console.log('clowntown(-20) is:', clowntown(-20));
+console.log('clowntown(0) is:', clowntown(0));
+console.log('clowntown(-108) is:', clowntown(-108));
 ```
 
 ```javascript
 function chowhound(llama) {
-  let x = [];
+  let razzleDazzle = [];
 
   for (let qq = 1; qq <= llama.length; qq++) {
-    x.push(llama[llama.length - qq]);
+    razzleDazzle.push(llama[llama.length - qq]);
   }
 
-  return x;
+  return razzleDazzle;
 }
 
 console.log(chowhound(['A', 'B', 'C', 'D', 'E', 'F']));
-```
-
-```javascript
-
 ```
