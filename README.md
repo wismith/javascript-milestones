@@ -1,10 +1,17 @@
 # Milestones - Week 5
 
+Below is a list of tasks. By the start of next week (Monday, February 17), everyone should...
+
+1. Understand what the task is asking
+1. Be able to do the task
+1. Write code that makes it clear you understand what's happening
+
+**FOR THE LOVE OF MONKEYS**, read the [Instructions](#instructions) first.
+
 ## Contents <!-- omit in toc -->
 
 - [Instructions](#instructions)
-  - [Restrictions](#restrictions)
-  - [Examples](#examples)
+  - [Demonstrations](#demonstrations)
 - [Tasks - Development Environment](#tasks---development-environment)
   - [Command Line](#command-line)
   - [Editing And Running Code](#editing-and-running-code)
@@ -29,13 +36,11 @@
 
 ## Instructions
 
-Below is a list of tasks. By the start of next week (Monday, February 17), everyone should...
+The snippets you write for each group of tasks can go in as many files as you'd like, but avoid putting everything in one giant file. It will make it hard for you to figure out what's going on.
 
-1. Understand what the task is asking
-1. Be able to do the task
-1. Write code that makes it clear you understand what's happening
+There's no particular format or requirement. This isn't an assignment. It's a study guide. You need to make it work for you. If you're spending time thinking about how ***I*** want it formatted then you're missing the point!
 
-### Restrictions
+We'll be sharing everyone's snippet after this is over, so write with that audience in mind. Be nice to your classmates. See the [Demonstrations](#demonstrations) section below for what helpful demonstrations look like.
 
 You're free to use any built-in JavaScript function unless otherwise stated. For example, if you're asked to write a function that works like `Math.max`, don't use `Math.max`!
 
@@ -43,13 +48,18 @@ When you find a task you're not sure how to do, search for documentation, tutori
 
 If you copy code from somewhere else, include the URL in a comment.
 
-### Examples
+### Demonstrations
 
 One of the tasks below is to use the `+` operator on two variables containing numbers and explain what that represents. Imagine you were writing something that served as a miniature tutorial for your other classmates. Both running the code and reading the code should reinforce how to use `+` and what it represents.
 
-#### Helpful Example <!-- omit in toc -->
+#### Helpful Demonstration <!-- omit in toc -->
 
-Write examples that share the same spirit as the following example:
+When writing your demonstration, remember that people will be interacting with it in two ways:
+
+1. Running the file and reading any output
+1. Reading the code itself to make sense of the output
+
+Here's a helpful demonstration:
 
 ```javascript
 let num1 = 50;
@@ -62,9 +72,9 @@ console.log('The sum of num1 and num2 is:', num1 + num2);
 
 Someone who ran this code first would see a bunch of output. Once they opened the code, they'd be able to see which line of code produced the output they just saw. They'd be able to play with the values and see the output change in a useful way.
 
-#### Unhelpful Example <!-- omit in toc -->
+#### Unhelpful Demonstration <!-- omit in toc -->
 
-This example is not helpful to you or anyone else:
+This demonstration is much less helpful:
 
 ```javascript
 let num1 = 50;
@@ -223,7 +233,7 @@ In a file called `conversions.js`, you should be able to do the following:
 
 ### Iteration / Looping
 
-You will probably want to create more than one file to demonstrate everything below. Try to use one loop per example. Imagine your examples being used in some online tutorial; a single loop that demonstrates 20 things will be confusing.
+You will probably want to create more than one file to demonstrate everything below. Try to use one loop per task. Imagine your demonstrations being used in some online tutorial; a single loop that demonstrates 20 things will be confusing.
 
 #### Looping With Numbers
 
