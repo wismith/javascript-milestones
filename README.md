@@ -93,20 +93,20 @@ While this code uses `+`, the output will be nothing but a column of numbers. Wh
 
 You should be able to...
 
-- [ ] Open the terminal outside of VS code
-- [ ] Use `cd` to navigate between directories
-- [ ] Use `ls` to list the contents of a directory
-- [ ] Use `mkdir` to create an empty directory
-- [ ] Use `code` to open VS Code
-- [ ] Use `git clone` to download a git repository onto your computer
+- [x] Open the terminal outside of VS code
+- [x] Use `cd` to navigate between directories
+- [x] Use `ls` to list the contents of a directory
+- [x] Use `mkdir` to create an empty directory
+- [x] Use `code` to open VS Code
+- [x] Use `git clone` to download a git repository onto your computer
 
 ### Editing And Running Code
 
 You should be able to...
 
-- [ ] Create a new (empty) JavaScript file named `sandbox.js` and edit it in VS code
-- [ ] Write some JavaScript in `sandbox.js`
-- [ ] Use `node` in the terminal to run the file
+- [x] Create a new (empty) JavaScript file named `sandbox.js` and edit it in VS code
+- [x] Write some JavaScript in `sandbox.js`
+- [x] Use `node` in the terminal to run the file
 
 The name `sandbox.js` is meant as an example. You could name the file anything.
 
