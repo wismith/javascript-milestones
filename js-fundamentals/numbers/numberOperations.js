@@ -77,7 +77,12 @@ function exampleMathFloor(num1, num2) {
 
 
 // Call Operation functions to log output to terminal
+console.log(`I have assigned ${num1} to num1 and ${num2} to num2.`);
+console.log();
 for (let operation of operationList) {
   operation(num1, num2);
   console.log();
 }
+
+// The numerical outputs of this program will change when we change the values of num1 and num2.
+// However, the functions still will work the same way, and produce correct results.
