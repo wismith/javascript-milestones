@@ -202,7 +202,7 @@ In a file called `objects.js`, you should be able to do the following:
   - [ ] The value for the key `firstName` is `'Jean-Luc'`
   - [ ] The value for the key `lastName` is `'Picard'`
   - [ ] The value for the key `age` is `79`
-- [ ] Create an object named `daysInMonth` whose keys are strings of the month names `'January'`, `'February'`, etc. and the keys are the number of days in that month.
+- [ ] Create an object named `daysInMonth` whose keys are strings of the month names `'January'`, `'February'`, etc. and the values are the number of days in that month.
 
 ### Conversions And Equivalents
 
